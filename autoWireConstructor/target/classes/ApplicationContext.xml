@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.w3.org/2001/XMLSchema"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="add" class="com.beans.Address">
+        <property name="city" value="Shegaon"/>
+        <property name="district" value="Buldhana"/>
+    </bean>
+
+    <bean id="st" class="com.beans.Student" autowire="constructor">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="Ravi"/>
+
+
+    </bean>
+
+</beans>
