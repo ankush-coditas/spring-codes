@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.w3.org/2001/XMLSchema"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id ="p1" class="com.beans.Participant">
+        <property name="name" value="Shakti"/>
+        <property name="add" value="mumbai/"/>
+
+    </bean>
+    <bean id ="p2" class="com.beans.Participant">
+        <property name="name" value="salman"/>
+        <property name="add" value="pune/"/>
+
+    </bean>
+    <bean id ="did" class="com.beans.Did">
+        <property name="seasonName" value="s2"/>
+        <property name="brandPartner" >
+            <list>
+                <value>bournvita</value>
+                <value>tvs</value>
+            </list>
+        </property>
+<property name="participants">
+    <map>
+        <entry
+    </map>
+</property>
+    </bean>
+</beans>
